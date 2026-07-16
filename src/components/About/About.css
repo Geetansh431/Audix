@@ -36,4 +36,5 @@
 
 .agency-vid{
     border-radius: 30px;
+    filter: grayscale(100%);
 }

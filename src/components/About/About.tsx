@@ -1,5 +1,5 @@
 import "./About.css";
-import Z from "../../assets/img/agency.mp4";
+import Z from "../../assets/chirag/IMG_5037.mp4";
 
 export const About = () => {
   return (
@@ -12,12 +12,12 @@ export const About = () => {
         outstanding ideas - but to great successes. <br />
         <br />
         We don't just do communication - we shape it. <br />
-        Only then can we create a meaingful <br />
+        Only then can we create a meaningful <br />
         conversation that ultimately leads to the goal. <br />
         <br />
         CHIRAG ARORA
       </h2>
-      <div className="agency">Agency</div>
+      {/* <div className="agency">Agency</div> */}
       <div className="agen">
         <video loop muted autoPlay className="agency-vid">
           <source src={Z} type="video/mp4" />
