@@ -15,9 +15,9 @@ export const About = () => {
         Only then can we create a meaningful <br />
         conversation that ultimately leads to the goal. <br />
         <br />
-        CHIRAG ARORA
       </h2>
-      {/* <div className="agency">Agency</div> */}
+      <div className="agency">Chirag</div>
+      <div className="agency-right">Arora</div>
       <div className="agen">
         <video loop muted autoPlay className="agency-vid">
           <source src={Z} type="video/mp4" />

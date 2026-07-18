@@ -15,7 +15,7 @@
 
 .agency{
     position: absolute;
-    margin-top: 75%;
+    margin-top: 70%;
     left: 20%;
     font-size: 17vw;
     color: black;
@@ -23,8 +23,18 @@
     z-index: 1;
 }
 
+.agency-right{
+    position: absolute;
+    margin-top: 95%;
+    left: 85%;
+    font-size: 17vw;
+    color: black;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .agen{
-    top: 1050px;
+    top: 950px;
     min-width: auto;
     min-height: 99%;
     border-radius: 30px;
