@@ -17,7 +17,7 @@ const Home = () => {
         </nav>
         <div className="heading">
           We don't do <br />
-          advertising.
+          advertising
         </div>
         <div className="view">
           <a href="#" className="Button-view">

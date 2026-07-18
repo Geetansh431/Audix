@@ -12,7 +12,6 @@ export function App() {
       <RecentWork />
       <About />
       <div className="noise"></div>
-      <div className="container"></div>
     </div>
   );
 }

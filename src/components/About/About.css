@@ -1,50 +1,78 @@
 .f{
-    height: 80vh;
+    height: auto;
+    margin-top: 20px;
+    padding: 0 20px 60px;
     font-family: "bord";
-    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .about-agency{
-    font-size: 4vw;
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 1.5;
     font-weight: bold;
-    position: absolute;
-    left: 20%;
-    margin-top: 5%;
+    max-width: 820px;
+    text-align: center;
+}
 
+/* Let the copy wrap naturally instead of forced line breaks */
+.about-agency br{
+    display: none;
+}
+
+.about-agency br + br{
+    display: block;
+    content: "";
+    margin-bottom: 12px;
+}
+
+.agency,
+.agency-right{
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    transform: none;
+    font-size: 22vw;
+    line-height: 1;
+    text-align: center;
+    width: 100%;
+    color: black;
+    z-index: 1;
 }
 
 .agency{
-    position: absolute;
-    margin-top: 70%;
-    left: 20%;
-    font-size: 17vw;
-    color: black;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.agency-right{
-    position: absolute;
-    margin-top: 95%;
-    left: 85%;
-    font-size: 17vw;
-    color: black;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    margin-top: 40px;
 }
 
 .agen{
-    top: 950px;
-    min-width: auto;
-    min-height: 99%;
+    top: 0;
+    margin: 24px 0 0;
+    width: 100%;
     border-radius: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
     position: relative;
     overflow-x: hidden;
 }
 
 .agency-vid{
+    width: 100%;
+    height: auto;
     border-radius: 30px;
     filter: grayscale(100%);
+}
+
+/* ---------- Small phones ---------- */
+@media (max-width: 560px) {
+    .about-agency{
+        font-size: 20px;
+    }
+
+    .agency,
+    .agency-right{
+        font-size: 26vw;
+    }
 }

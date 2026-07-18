@@ -1,5 +1,4 @@
 import "./Manifesto.css";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export const Manifesto = () => {
   return (
@@ -9,7 +8,7 @@ export const Manifesto = () => {
         <p className="about">
           We don't build for one side of the table. We build <br />
           the room where brands, creators, and everyday <br />
-          people actually want to show up — because trust <br />
+          people actually want to show up because trust <br />
           isn't given here, it's earned in the open.
         </p>
         <p className="about-2">
@@ -24,13 +23,6 @@ export const Manifesto = () => {
           works.
           <br />
         </p>
-      </div>
-      <div className="oval">
-        <DotLottieReact
-          autoplay
-          loop
-          src="https://assets2.lottiefiles.com/packages/lf20_avndu8kw.json"
-        />
       </div>
     </div>
   );

@@ -17,7 +17,6 @@ export const About = () => {
         <br />
       </h2>
       <div className="agency">Chirag</div>
-      <div className="agency-right">Arora</div>
       <div className="agen">
         <video loop muted autoPlay className="agency-vid">
           <source src={Z} type="video/mp4" />
