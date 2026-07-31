@@ -2,7 +2,7 @@ import "./Manifesto.css";
 
 export const Manifesto = () => {
   return (
-    <div className="s">
+    <div className="s" id="manifesto">
       <div className="mani">Manifesto</div>
       <div className="text-way">
         <p className="about">

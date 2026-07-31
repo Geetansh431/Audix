@@ -20,7 +20,7 @@ const Home = () => {
           advertising
         </div>
         <div className="view">
-          <a href="#" className="Button-view">
+          <a href="#manifesto" className="Button-view">
             View Manifesto
           </a>
         </div>
