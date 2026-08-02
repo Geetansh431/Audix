@@ -90,8 +90,8 @@
     font-family: "nanu";
     font-size: 1.1vw;
     font-weight: bold;
-    color: black;
     text-align: center;
+    color: black;
     margin: 0 0 20px;
 }
 
@@ -99,7 +99,6 @@
     font-size: 19vw;
     font-weight: bold;
     line-height: 1;
-    color: black;
     text-align: center;
     margin: 0;
     position: relative;
@@ -137,15 +136,6 @@
 .credit:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-.footer:hover{
-    color: white;
-    background-color: black;
-    border: 1px dotted white;
-}
-.get-in:hover{
-    color: white;
 }
 
 .get-in:after {
