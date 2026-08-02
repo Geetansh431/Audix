@@ -28,7 +28,7 @@ export const Testimonials = () => {
       </div>
       <div className="credit-row">
         <a href="" className="credit">
-          @chaniru.lk
+          @itsraag.work
         </a>
         <a href="" className="credit">
           Instagram
