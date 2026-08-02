@@ -26,14 +26,7 @@ export const Testimonials = () => {
         <p className="digi">Let's get physical or keep it digital</p>
         <h1 className="get-in">Get in touch</h1>
       </div>
-      <div className="credit-row">
-        <a href="" className="credit">
-          @itsraag.work
-        </a>
-        <a href="" className="credit">
-          Instagram
-        </a>
-      </div>
+      <div className="credit-row"></div>
     </div>
   );
 };
