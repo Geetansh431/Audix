@@ -61,6 +61,7 @@
 }
 
 .sub-rec-1{
+    display: block;
     top: 0;
     width: calc(100% - 20px);
     height: 420px;
@@ -83,7 +84,7 @@
 .sub-rec-1 video,
 .sub-rec-1 img{
   transform-origin: 50% 25%;
-  transition: transform 5s, filter 3s ease-in-out;
+  transition: transform 5s, filter 0.6s ease-in-out;
   overflow: hidden;
 }
 
@@ -131,4 +132,13 @@
     .oval-2{
         height: 220px;
     }
+}
+
+/* Black & white thumbnails */
+.sub-rec-1 img{
+    filter: grayscale(100%);
+}
+
+.sub-rec-1:hover img{
+    filter: grayscale(0%);
 }

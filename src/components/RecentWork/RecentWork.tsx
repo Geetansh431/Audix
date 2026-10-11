@@ -1,12 +1,30 @@
 import "./RecentWork.css";
+import work1 from "../../assets/Work/itsraag_DYWrXXWiStz.jpg";
+import work2 from "../../assets/Work/itsraag_DD_cjqNTKCX.jpg";
+import work3 from "../../assets/Work/itsraag_DKu-5fnTZAW.jpg";
+import work4 from "../../assets/Work/itsraag_DdobIgRNASC.jpg";
 
-// TODO: swap these placeholder URLs for the real case videos.
-// Each must be a direct .mp4 URL (Instagram Reel links won't work as a video source).
-const videos = [
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+const works: { href: string; image?: string; alt: string }[] = [
+  {
+    href: "https://www.instagram.com/reel/DYWrXXWiStz/",
+    image: work1,
+    alt: "Work 1",
+  },
+  {
+    href: "https://www.instagram.com/reel/DD_cjqNTKCX/",
+    image: work2,
+    alt: "Work 2",
+  },
+  {
+    href: "https://www.instagram.com/reel/DKu-5fnTZAW/",
+    image: work3,
+    alt: "Work 3",
+  },
+  {
+    href: "https://www.instagram.com/reel/DQMM3Csiaf0/",
+    image: work4,
+    alt: "Work 4",
+  },
 ];
 
 export const RecentWork = () => {
@@ -14,18 +32,21 @@ export const RecentWork = () => {
     <div className="t">
       <div className="rec">Work</div>
       <div className="rec-grid">
-        {videos.map((src, i) => (
-          <div className={`rec-${i + 1}`} key={src}>
-            <div className="sub-rec-1">
-              <video
-                className="picdrop"
-                src={src}
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
-            </div>
+        {works.map((w, i) => (
+          <div className={`rec-${i + 1}`} key={w.href}>
+            <a
+              className="sub-rec-1"
+              href={w.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${w.alt} – watch on Instagram`}
+            >
+              {w.image ? (
+                <img className="picdrop" src={w.image} alt={w.alt} />
+              ) : (
+                <div className="picdrop" style={{ background: "#eee" }} />
+              )}
+            </a>
           </div>
         ))}
       </div>
